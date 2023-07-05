@@ -1,0 +1,28 @@
+ÿş
+Cls
+@echo off &setlocal enabledelayedexpansion
+color a
+title ×÷ÕßQingnAi qq:2911509598 Ô¶³ÌROOT¾È×©Èº:657162260
+set "check=1"
+set fastboot="QingnAi\fastboot.exe"
+for /f %%i in ('!fastboot! devices') do ( set "check=%%i")
+echo !check!
+if !check!==1 (echo.
+echo Á´½Ó´æÔÚÎÊÌâ ! !&echo.
+echo ÇëÈ·ÈÏÎÄ¼şÒÑ½âÑ¹ ÇÒ ÊÖ»ú½øÈëfastboot&echo.
+echo Êı¾İÏßÊ¹ÓÃµÄÔ­×° ²¢ÇÒ ÒÑ°²×°Çı¶¯&echo.
+echo »òÕß¸ü»»µçÄÔ½Ó¿ÚÔÙ´Î³¢ÊÔ!&echo.&goto :end
+)
+QingnAi\fastboot.exe devices
+QingnAi\fastboot.exe flash init_boot magisk\magisk.img
+QingnAi\fastboot.exe reboot
+echo.
+echo.
+echo Ë¢ÈëÃæ¾ß³É¹¦!Çëµ½ÈºÎÄ¼şÏÂÔØÃæ¾ß25.2°æ±¾
+echo.
+echo Î´¾­×÷ÕßÊÚÈ¨½ûÖ¹×ªÔØ Î´ÊÚÈ¨½«»á´¥·¢Î£ÏÕ´úÂë!
+echo.
+echo ×÷Õß QingnAi BÕ¾:ÉÙËµ»°ºÃ°É°ßğ¯i Ô¶³ÌROOT¾È×©Èº:657162260
+echo.
+:end
+cmd /k
